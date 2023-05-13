@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Example</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <section class="main">
+        <div class="wrapper">
+            <header>
+                <div class="header__inner">
+                    <a href="#"><img src="assets/imgs/logo.svg" alt="Logo" class="header__logo pc"></a>
+                    <div class="header__mob">
+                        <a href="#"><img src="assets/imgs/logo.svg" alt="Logo" class="header__logo"></a>
+                        <div class="header__features">
+                            <div class="header__description">
+                                <img src="assets/imgs/additions.svg" alt="Пополнений">
+                                <div class="description__text">
+                                    <span>812 245</span>
+                                    <p>Пополнений</p>
+                                </div>
+                            </div>
+                            <div class="header__description">
+                                <img src="assets/imgs/clients.svg" alt="Клиентов">
+                                <div class="description__text">
+                                    <span>284 517</span>
+                                    <p>клиентов</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__description online">
+                        <img src="assets/imgs/online-header.svg" alt="Online">
+                        <div class="description__text ">
+                            <span>525</span>
+                            <p>Онлайн</p>
+                        </div>
+                    </div>
+                    <div class="header__nickname">
+                        <div class="nickname__box">
+                            <span>Nickname</span>
+                            <p class="nickname__amount">19999₽</p>
+                        </div>
+                        <div class="nickname__box">
+                            <span>Nickname</span>
+                            <p class="nickname__amount">19999₽</p>
+                        </div>
+                        <div class="nickname__box">
+                            <span>Nickname</span>
+                            <p class="nickname__amount">19999₽</p>
+                        </div>
+                    </div>
+                    <div class="header__description pc">
+                        <img src="assets/imgs/additions.svg" alt="Пополнений">
+                        <div class="description__text">
+                            <span>812 245</span>
+                            <p>Пополнений</p>
+                        </div>
+                    </div>
+                    <div class="header__description pc">
+                        <img src="assets/imgs/clients.svg" alt="Клиентов">
+                        <div class="description__text">
+                            <span>284 517</span>
+                            <p>клиентов</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="game__buttons">
+                <button class="btn steam active">
+                    <span>Пополнение Steam</span>
+                    <p>Steam</p>
+                </button>
+                <button class="btn roblox">
+                    <span>Пополнение Roblox</span>
+                    <p>Roblox</p>
+                </button>
+                <button class="btn pubg">
+                    <span>Пополнение PUBG: mobile</span>
+                    <p>PUBG: mobile</p>
+                </button>
+            </div>
+            <h1 class="intro__title">Пополни свой Steam</h1>
+            <div class="main__deposit">
+                <form action="#" class="main__form">
+                    <div href="#" class="how__work">
+                        <img src="assets/imgs/howitwork.png" alt="Как это работает?">
+                        <a href="#" data-modal="#popup">Как это работает?</a>
+                    </div>
+                    <div class="login__input">
+                        <input class="main-input login" type="text" placeholder="Ваш логин" required>
+                        <div href="#" class="how__login">
+                            <img src="assets/imgs/login.svg" alt="Как это работает?">
+                            <a href="#" data-modal="#popup">Где взять логин?</a>
+                        </div>
+                    </div>
+                    <div href="#" class="how__work">
+                        <img src="assets/imgs/howitwork.png" alt="Как это работает?">
+                        <a href="#" data-modal="#howitwork">Где взять логин?</a>
+                    </div>
+                    <input class="main-input amount" type="text" placeholder="Сумма пополнения" required>
+                    <div class="amount__block">
+                        <button class="block__price">
+                            <span>100₽</span>
+                        </button>
+                        <button class="block__price">
+                            <span>200₽</span>
+                        </button>
+                        <button class="block__price">
+                            <span>500₽</span>
+                        </button>
+                        <button class="block__price">
+                            <span>1000₽</span>
+                        </button>
+                    </div>
+                    <div class="deposit_way mob">
+                        <div class="deposit__row">
+                            <a class="deposit__item sbp" href="#">
+                                <img src="assets/imgs/sbp.svg" alt="СБП">
+                            </a>
+                            <a class="deposit__item money" href="#">
+                                <img src="assets/imgs/iomoney 1.png" alt="СБП">
+                            </a>
+                        </div>
+                        <div class="deposit__row">
+                            <a class="deposit__item visa" href="#">
+                                <img src="assets/imgs/visa.svg" alt="СБП">
+                            </a>
+                            <a class="deposit__item qiwi" href="#">
+                                <img src="assets/imgs/qiwi.svg" alt="СБП">
+                            </a>
+                        </div>
+                    </div>
+                    <label class="check option">
+                        <input class="check__input" type="checkbox" required>
+                        <span class="check__box"></span>
+                        <p>Я подтверждаю, что указал логин Steam, а не никнейм</p>
+                    </label>
+                    <button type="submit" class="final__button">Пополнить</button>
+                </form>
+                <div class="deposit_way pc">
+                    <div class="deposit__row">
+                        <a class="deposit__item sbp" href="#">
+                            <img src="assets/imgs/sbp.svg" alt="СБП">
+                        </a>
+                        <a class="deposit__item money" href="#">
+                            <img src="assets/imgs/iomoney 1.png" alt="СБП">
+                        </a>
+                    </div>
+                    <div class="deposit__row">
+                        <a class="deposit__item visa" href="#">
+                            <img src="assets/imgs/visa.svg" alt="СБП">
+                        </a>
+                        <a class="deposit__item qiwi" href="#">
+                            <img src="assets/imgs/qiwi.svg" alt="СБП">
+                        </a>
+                    </div>
+                </div>
+                <div class="deposit__fee">
+                    <p class="fee__title">Зачислится на ваш счёт: <span>100 000₽</span></p>
+                    <div class="fees">
+                        <div class="fee">
+                            <p>Заплатите:</p>
+                            <span>1212О₽</span>
+                        </div>
+                        <div class="fee">
+                            <p>Комиссия сервиса:</p>
+                            <span>1212О₽</span>
+                        </div>
+                        <div class="fee">
+                            <p>Банковские издержки:</p>
+                            <span>1212О₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer__item">
+                    <a href="#">Отзывы</a>
+                </div>
+                <div class="footer__item">
+                    <a href="#">Контакты</a>
+                </div>
+                <div class="footer__item">
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer__item">
+                    <a href="#">API</a>
+                </div>
+                <div class="footer__item">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__item">
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+
+    <div class='popup' id='popup'>
+        <div class="wrapper">
+            <div class="howitwork__ways">
+                <div class="way">
+                    <img src="assets/imgs/steam-way.svg" alt="Стим">
+                    <p>Введи свой логин Steam</p>
+                </div>
+                <div class="way">
+                    <img src="assets/imgs/2-way.svg" alt="Стим">
+                    <p>Укажи желаемую сумму пополнения</p>
+                </div>
+                <div class="way">
+                    <img src="assets/imgs/3-way.svg" alt="Стим">
+                    <p>Оплати любым удобным методом</p>
+                </div>
+                <div class="way">
+                    <img src="assets/imgs/4-way.svg" alt="Стим">
+                    <p>Получи деньги на баланс Steam!</p>
+                </div>
+            </div>
+            <div class="popup__accordeon one">
+                <div class="accordeon__item">
+                    <div class="accordeon__title">
+                        <p>Требования к аккаунту</p>
+                    </div>
+                    <div class="accordeon__text">
+                        Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение
+                        баланса:<br><br>
+                        Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).<br><br>
+                        Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем
+                        пользователям, на аккаунте которых красная табличка (КТ).
+                    </div>
+                </div>
+                <div class="accordeon__item">
+                    <div class="accordeon__title">
+                        <p>Требования к аккаунту</p>
+                    </div>
+                    <div class="accordeon__text">
+                        Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение
+                        баланса:<br><br>
+                        Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).<br><br>
+                        Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем
+                        пользователям, на аккаунте которых красная табличка (КТ).
+                    </div>
+                </div>
+                <div class="accordeon__item">
+                    <div class="accordeon__title">
+                        <p>Требования к аккаунту</p>
+                    </div>
+                    <div class="accordeon__text">
+                        Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение
+                        баланса:<br><br>
+                        Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).<br><br>
+                        Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем
+                        пользователям, на аккаунте которых красная табличка (КТ).
+                    </div>
+                </div>
+                <div class="accordeon__item">
+                    <div class="accordeon__title">
+                        <p>Требования к аккаунту</p>
+                    </div>
+                    <div class="accordeon__text">
+                        Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение
+                        баланса:<br><br>
+                        Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).<br><br>
+                        Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем
+                        пользователям, на аккаунте которых красная табличка (КТ).
+                    </div>
+                </div>
+            </div>
+            <a href='#' class='popup__close' data-close="">
+                <img src="assets/imgs/close.svg" alt="Закрыть">
+                <span>Закрыть окно</span>
+            </a>
+        </div>
+    </div>
+
+    <div class='popup' id='howitwork'>
+        <div class="wrapper">
+            <div class='popup__body'>
+                <div class='popup__content'>
+                    <p class="popup__title">Где взять логин Steam?</p>
+                    <div class="rectangle"></div>
+                    <p class="poput__text">Обратите внимание! Логин, это то, что вы указываете при входе в Steam. Если
+                        вы укажите неверный
+                        логин, то средства уйдут другому пользователю.</p>
+                    <button data-close class="popup__btn">Понял</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
